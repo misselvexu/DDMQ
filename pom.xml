@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xiaojukeji.ddmq</groupId>
+    <artifactId>carrera-bom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>carrera-bom</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+
+        <!-- Core Modules -->
+        <module>carrera-chronos</module>
+        <module>carrera-common</module>
+        <module>carrera-console/carrera-console</module>
+        <module>carrera-consumer</module>
+        <module>carrera-producer</module>
+        <module>carrera-monitor</module>
+
+        <!-- Sdk -->
+        <module>carrera-sdk/consumer/java/carrera-consumer-sdk</module>
+        <module>carrera-sdk/producer/java/carrera-producer-sdk</module>
+
+        <!-- Sdk Samples -->
+        <module>carrera-sdk/consumer/java/carrera-consumer-sdk-example</module>
+        <module>carrera-sdk/producer/java/carrera-producer-sdk-example</module>
+
+        <!-- RocketMQ -->
+        <module>rocketmq</module>
+    </modules>
+
+</project>
